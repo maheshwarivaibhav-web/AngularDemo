@@ -1,0 +1,79 @@
+
+
+Select Contry : 
+<select [(ngModel)]="colordata">
+    <option value="" disabled selected>Select Color</option>
+        <option *ngFor='let c of colors'>{{ c }}</option> 
+</select>
+<br>
+<br>
+<div [ngStyle]="{'width':'300px','height':'300px',background:getPickedColor()}">&nbsp;</div>
+
+<!-- <div [ngSwitch]="cdata">
+    <div *ngSwitchCase="'india'">
+        <p [ngStyle]="{ 'background' : 'red'}">You have Selected : +91 </p>
+    </div>
+    <div *ngSwitchCase="'USA'">
+        <p [ngStyle]="{ background : getColor() }">You have Selected : +</p>
+    </div>
+    <div *ngSwitchCase="'United Kingdom'">
+        <p [ngStyle]="{ background : getColor()}">You have Selected : +44</p>
+    </div>
+    <div *ngSwitchCase="'japan'">
+        You have Selected : +81
+    </div>
+    <div *ngSwitchDefault>
+        Wrong Choice !!
+    </div>
+</div> -->
+
+
+
+
+<!-- ODD List :- 
+<div *ngFor='let number of numberdata'>
+    <li *ngIf="number %2 != 0">
+        {{number}}
+    </li> 
+    
+</div>
+
+EVEN List :-
+
+<div *ngFor='let number of numberdata'>
+    <li *ngIf="number %2 == 0">
+        {{number}}
+    </li> 
+    
+</div> -->
+
+
+
+<!-- <table>
+    <tr>
+        <td>Roll No </td>
+        <td><input type="text" [(ngModel)] = "rollNo"></td>
+    </tr>
+
+    <tr>
+        <td>Name</td>
+        <td><input type="text" [(ngModel)] = "name"></td>
+    </tr>
+
+    <tr>
+        <td>Mobile Number</td>
+        <td><input type="text" [(ngModel)] = "mobileNo"></td>
+    </tr>
+
+    <tr>
+        <td>Email Id</td>
+        <td><input type="text" [(ngModel)] = "email"></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center"><button (click)="showData($event)">Submit</button></td>
+        
+    </tr>
+
+</table>
+
+<p [innerHTML]="data"></p> -->
